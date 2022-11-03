@@ -1,0 +1,243 @@
+2022-10-29 13:33:19.336  INFO 10888 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 10888 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 13:33:19.347  INFO 10888 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 13:33:22.344  INFO 10888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 13:33:22.495  INFO 10888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 13:33:22.497  INFO 10888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 13:33:22.792  INFO 10888 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 13:33:22.792  INFO 10888 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3355 ms
+2022-10-29 13:33:24.241  INFO 10888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 13:33:24.338  INFO 10888 --- [main] com.example.BotApplication               : Started BotApplication in 5.728 seconds (JVM running for 23.498)
+2022-10-29 14:58:00.358  INFO 7752 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 7752 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 14:58:00.373  INFO 7752 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 14:58:03.111  INFO 7752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 14:58:03.137  INFO 7752 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 14:58:03.138  INFO 7752 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 14:58:03.473  INFO 7752 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 14:58:03.473  INFO 7752 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2901 ms
+2022-10-29 14:58:05.808  INFO 7752 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 14:58:05.939  INFO 7752 --- [main] com.example.BotApplication               : Started BotApplication in 6.725 seconds (JVM running for 13.017)
+2022-10-29 14:59:39.503  INFO 7752 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 16:17:28.990  INFO 2516 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 2516 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 16:17:29.007  INFO 2516 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 16:17:37.333  INFO 2516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 16:17:37.517  INFO 2516 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 16:17:37.518  INFO 2516 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 16:17:38.963  INFO 2516 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 16:17:38.963  INFO 2516 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9875 ms
+2022-10-29 16:17:42.784  INFO 2516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 16:17:42.970  INFO 2516 --- [main] com.example.BotApplication               : Started BotApplication in 14.679 seconds (JVM running for 16.96)
+2022-10-29 16:19:21.533  INFO 2516 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 16:19:24.936 ERROR 2516 --- [FunnyTests22Bot Telegram Executor] o.t.t.u.DefaultBotSession                : chatId is marked non-null but is null
+
+java.lang.NullPointerException: chatId is marked non-null but is null
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.setChatId(SendMessage.java:31) ~[telegrambots-meta-6.1.0.jar:na]
+	at com.example.service.Bot.secondMenu(Bot.java:135) ~[main/:na]
+	at com.example.service.Bot.onUpdateReceived(Bot.java:74) ~[main/:na]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27) ~[telegrambots-meta-6.1.0.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317) ~[telegrambots-6.1.0.jar:na]
+
+2022-10-29 16:21:31.359  INFO 6016 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 6016 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 16:21:31.363  INFO 6016 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 16:21:32.784  INFO 6016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 16:21:32.799  INFO 6016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 16:21:32.800  INFO 6016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 16:21:32.979  INFO 6016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 16:21:32.980  INFO 6016 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1543 ms
+2022-10-29 16:21:34.448  INFO 6016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 16:21:34.551  INFO 6016 --- [main] com.example.BotApplication               : Started BotApplication in 3.789 seconds (JVM running for 4.639)
+2022-10-29 16:21:45.114  INFO 6016 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 16:21:47.440 ERROR 6016 --- [FunnyTests22Bot Telegram Executor] o.t.t.u.DefaultBotSession                : Cannot invoke "String.isEmpty()" because "this.text" is null
+
+java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "this.text" is null
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.validate(SendMessage.java:130) ~[telegrambots-meta-6.1.0.jar:na]
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendMethodRequest(DefaultAbsSender.java:1070) ~[telegrambots-6.1.0.jar:na]
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1044) ~[telegrambots-6.1.0.jar:na]
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64) ~[telegrambots-meta-6.1.0.jar:na]
+	at com.example.service.Bot.secondMenu(Bot.java:154) ~[main/:na]
+	at com.example.service.Bot.onUpdateReceived(Bot.java:74) ~[main/:na]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27) ~[telegrambots-meta-6.1.0.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317) ~[telegrambots-6.1.0.jar:na]
+
+2022-10-29 16:23:18.377  INFO 12320 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 12320 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 16:23:18.386  INFO 12320 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 16:23:19.765  INFO 12320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 16:23:19.780  INFO 12320 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 16:23:19.780  INFO 12320 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 16:23:19.954  INFO 12320 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 16:23:19.954  INFO 12320 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1488 ms
+2022-10-29 16:23:21.192  INFO 12320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 16:23:21.265  INFO 12320 --- [main] com.example.BotApplication               : Started BotApplication in 3.484 seconds (JVM running for 4.386)
+2022-10-29 16:23:30.949  INFO 12320 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 16:23:35.097 ERROR 12320 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Error occurred: Text parameter can't be empty
+2022-10-29 16:24:11.247  INFO 9176 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 9176 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 16:24:11.251  INFO 9176 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 16:24:12.685  INFO 9176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 16:24:12.700  INFO 9176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 16:24:12.701  INFO 9176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 16:24:12.877  INFO 9176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 16:24:12.878  INFO 9176 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1534 ms
+2022-10-29 16:24:14.293  INFO 9176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 16:24:14.385  INFO 9176 --- [main] com.example.BotApplication               : Started BotApplication in 3.806 seconds (JVM running for 4.802)
+2022-10-29 16:24:26.056  INFO 9176 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 16:24:27.775 ERROR 9176 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Error occurred: Text parameter can't be empty
+2022-10-29 16:25:23.384  INFO 5312 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 5312 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 16:25:23.394  INFO 5312 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 16:25:24.789  INFO 5312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 16:25:24.805  INFO 5312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 16:25:24.806  INFO 5312 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 16:25:24.979  INFO 5312 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 16:25:24.979  INFO 5312 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1514 ms
+2022-10-29 16:25:26.327  INFO 5312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 16:25:26.409  INFO 5312 --- [main] com.example.BotApplication               : Started BotApplication in 3.633 seconds (JVM running for 4.565)
+2022-10-29 16:25:38.337  INFO 5312 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 16:25:39.997 ERROR 5312 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Error occurred: Text parameter can't be empty
+2022-10-29 16:26:57.615  INFO 5732 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 5732 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 16:26:57.620  INFO 5732 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 16:26:58.997  INFO 5732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 16:26:59.012  INFO 5732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 16:26:59.013  INFO 5732 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 16:26:59.186  INFO 5732 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 16:26:59.186  INFO 5732 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1490 ms
+2022-10-29 16:27:00.662  INFO 5732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 16:27:00.758  INFO 5732 --- [main] com.example.BotApplication               : Started BotApplication in 3.801 seconds (JVM running for 4.675)
+2022-10-29 16:27:05.234  INFO 5732 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 17:15:33.336  INFO 5884 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 5884 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 17:15:33.341  INFO 5884 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 17:15:36.496  INFO 5884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 17:15:36.939  INFO 5884 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 17:15:36.941  INFO 5884 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 17:15:38.893  INFO 5884 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 17:15:38.893  INFO 5884 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5480 ms
+2022-10-29 17:15:41.065  INFO 5884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 17:15:41.178  INFO 5884 --- [main] com.example.BotApplication               : Started BotApplication in 8.472 seconds (JVM running for 10.814)
+2022-10-29 17:19:11.228  INFO 5884 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 17:21:37.926  INFO 5884 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 17:22:41.597  INFO 12200 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 12200 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 17:22:41.603  INFO 12200 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 17:22:43.060  INFO 12200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 17:22:43.075  INFO 12200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 17:22:43.076  INFO 12200 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 17:22:43.259  INFO 12200 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 17:22:43.260  INFO 12200 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1539 ms
+2022-10-29 17:22:44.585  INFO 12200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 17:22:44.683  INFO 12200 --- [main] com.example.BotApplication               : Started BotApplication in 3.762 seconds (JVM running for 5.846)
+2022-10-29 17:23:36.013  INFO 12200 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 18:14:38.715  INFO 11112 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 11112 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 18:14:38.720  INFO 11112 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 18:14:40.203  INFO 11112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 18:14:40.220  INFO 11112 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 18:14:40.221  INFO 11112 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 18:14:40.399  INFO 11112 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 18:14:40.400  INFO 11112 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1605 ms
+2022-10-29 18:14:41.733  INFO 11112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 18:14:41.824  INFO 11112 --- [main] com.example.BotApplication               : Started BotApplication in 3.831 seconds (JVM running for 4.801)
+2022-10-29 18:15:35.596  INFO 11112 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 18:18:52.977  INFO 120 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 120 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 18:18:52.995  INFO 120 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 18:18:54.604  INFO 120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 18:18:54.621  INFO 120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 18:18:54.622  INFO 120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 18:18:54.810  INFO 120 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 18:18:54.810  INFO 120 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1713 ms
+2022-10-29 18:18:56.742  INFO 120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 18:18:56.846  INFO 120 --- [main] com.example.BotApplication               : Started BotApplication in 4.607 seconds (JVM running for 5.717)
+2022-10-29 18:23:09.584  INFO 8256 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 8256 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 18:23:09.589  INFO 8256 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 18:23:11.286  INFO 8256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 18:23:11.305  INFO 8256 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 18:23:11.306  INFO 8256 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 18:23:11.496  INFO 8256 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 18:23:11.497  INFO 8256 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1826 ms
+2022-10-29 18:23:13.343  INFO 8256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 18:23:13.439  INFO 8256 --- [main] com.example.BotApplication               : Started BotApplication in 4.464 seconds (JVM running for 5.353)
+2022-10-29 18:24:12.803  INFO 8912 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 8912 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 18:24:12.807  INFO 8912 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 18:24:14.328  INFO 8912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 18:24:14.343  INFO 8912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 18:24:14.344  INFO 8912 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 18:24:14.527  INFO 8912 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 18:24:14.527  INFO 8912 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1645 ms
+2022-10-29 18:24:15.950  INFO 8912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 18:24:16.047  INFO 8912 --- [main] com.example.BotApplication               : Started BotApplication in 3.869 seconds (JVM running for 4.923)
+2022-10-29 18:25:22.573  INFO 8912 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 18:33:37.709  INFO 9088 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 9088 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 18:33:37.713  INFO 9088 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 18:33:39.229  INFO 9088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 18:33:39.246  INFO 9088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 18:33:39.247  INFO 9088 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 18:33:39.474  INFO 9088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 18:33:39.474  INFO 9088 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1678 ms
+2022-10-29 18:33:41.690  INFO 9088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 18:33:42.150  INFO 9088 --- [main] com.example.BotApplication               : Started BotApplication in 5.098 seconds (JVM running for 6.076)
+2022-10-29 18:37:16.342  INFO 5304 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 5304 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 18:37:16.346  INFO 5304 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 18:37:17.870  INFO 5304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 18:37:17.885  INFO 5304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 18:37:17.886  INFO 5304 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 18:37:18.096  INFO 5304 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 18:37:18.096  INFO 5304 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1671 ms
+2022-10-29 18:37:21.401  INFO 5304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 18:37:21.543  INFO 5304 --- [main] com.example.BotApplication               : Started BotApplication in 5.832 seconds (JVM running for 6.922)
+2022-10-29 18:51:38.163  INFO 11500 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 11500 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 18:51:38.402  INFO 11500 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 18:51:49.437  INFO 11500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 18:51:49.453  INFO 11500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 18:51:49.454  INFO 11500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 18:51:49.993  INFO 11500 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 18:51:49.994  INFO 11500 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9820 ms
+2022-10-29 18:51:55.548  INFO 11500 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 18:51:55.907  INFO 11500 --- [main] com.example.BotApplication               : Started BotApplication in 18.567 seconds (JVM running for 19.796)
+2022-10-29 18:52:53.630  INFO 11500 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 18:56:16.884  INFO 11500 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 19:14:34.458  INFO 13076 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 13076 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 19:14:34.462  INFO 13076 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 19:14:35.817  INFO 13076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 19:14:35.832  INFO 13076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 19:14:35.833  INFO 13076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 19:14:36.008  INFO 13076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 19:14:36.008  INFO 13076 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1471 ms
+2022-10-29 19:14:37.402  INFO 13076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 19:14:37.504  INFO 13076 --- [main] com.example.BotApplication               : Started BotApplication in 3.632 seconds (JVM running for 4.515)
+2022-10-29 19:15:42.406  INFO 13076 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 19:15:45.972  INFO 13076 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 19:26:59.656  INFO 12236 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 12236 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 19:26:59.661  INFO 12236 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 19:27:01.250  INFO 12236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 19:27:01.265  INFO 12236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 19:27:01.266  INFO 12236 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 19:27:01.444  INFO 12236 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 19:27:01.445  INFO 12236 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1692 ms
+2022-10-29 19:27:13.190  INFO 12236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 19:27:13.341  INFO 12236 --- [main] com.example.BotApplication               : Started BotApplication in 14.509 seconds (JVM running for 15.944)
+2022-10-29 19:27:19.386  INFO 12236 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 19:27:21.901  INFO 12236 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 19:27:24.740 ERROR 12236 --- [FunnyTests22Bot Telegram Executor] o.t.t.u.DefaultBotSession                : Cannot invoke "org.telegram.telegrambots.meta.api.objects.Message.getChat()" because the return value of "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" is null
+
+java.lang.NullPointerException: Cannot invoke "org.telegram.telegrambots.meta.api.objects.Message.getChat()" because the return value of "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" is null
+	at com.example.service.Bot.onUpdateReceived(Bot.java:78) ~[main/:na]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27) ~[telegrambots-meta-6.1.0.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317) ~[telegrambots-6.1.0.jar:na]
+
+2022-10-29 19:35:39.892  INFO 2760 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 2760 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 19:35:39.896  INFO 2760 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 19:35:41.476  INFO 2760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 19:35:41.494  INFO 2760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 19:35:41.495  INFO 2760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 19:35:41.763  INFO 2760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 19:35:41.763  INFO 2760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1792 ms
+2022-10-29 19:35:43.227  INFO 2760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 19:35:43.300  INFO 2760 --- [main] com.example.BotApplication               : Started BotApplication in 4.082 seconds (JVM running for 4.997)
+2022-10-29 19:36:02.644  INFO 2760 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
+2022-10-29 19:36:38.793  INFO 11116 --- [main] com.example.BotApplication               : Starting BotApplication using Java 18.0.2.1 on DESKTOP-7MOA612 with PID 11116 (C:\Users\kumam\bot\demo\build\classes\java\main started by kumam in C:\Users\kumam\bot\demo)
+2022-10-29 19:36:38.802  INFO 11116 --- [main] com.example.BotApplication               : No active profile set, falling back to 1 default profile: "default"
+2022-10-29 19:36:40.245  INFO 11116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-29 19:36:40.260  INFO 11116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-29 19:36:40.261  INFO 11116 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-29 19:36:40.444  INFO 11116 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-29 19:36:40.445  INFO 11116 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1568 ms
+2022-10-29 19:36:41.729  INFO 11116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-29 19:36:41.803  INFO 11116 --- [main] com.example.BotApplication               : Started BotApplication in 3.629 seconds (JVM running for 4.527)
+2022-10-29 19:37:30.697  INFO 11116 --- [FunnyTests22Bot Telegram Executor] com.example.service.Bot                  : Replied to user Ольга
