@@ -13,6 +13,6 @@ public class BotConfig {
     @Value("${bot.userName}")
     private String botName;
 
-    @Value("${bot.token}")
+    @Value("${TOKEN}")
     private String botToken;
 }
